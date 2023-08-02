@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegForm</title>
+    <h1 style="background-color:pink;text-align:center;padding:7px;border-radius:10px;margin-left:500px;margin-right:500px">Login Form</h1>
+    <style>
+    body{
+        background-color:rgb(64, 60, 63);
+    }
+label{
+padding:7px;
+width:150px;
+display:inline-block;
+text-align:left;
+}
+form{
+margin:0px 500px 400px 500px;
+background-color:rgb(185, 184, 184);
+padding:20px;
+border-radius:40px;
+box-shadow:10px 10px 7px 10px #acabab;
+}
+#submit{
+padding:20px;
+}
+input[type=submit]{
+    background-color:green;
+    margin-left:100px;
+    color:white;
+}
+input[type=submit]:hover{
+    background-color:pink;
+    color:black;
+}
+</style>
+</head>
+<body>
+    <form action="https://formspree.io/f/mbjvdygk" method="post" >
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Email" name="email" required><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter Password" required><br>
+        <div id="submit">
+            <input type="submit" value="Login" required>
+        </div>
+        <p>Not registered? <a href="index.html">Register</a> here</p>
+    </form>
+</body>
+</html>
